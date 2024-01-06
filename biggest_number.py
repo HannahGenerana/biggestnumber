@@ -9,5 +9,5 @@ first_num = int(input("Kindly input your first random number: "))
 second_num = int(input("Kindly input your second random number: "))
 third_num = int(input("Kindly input your third random number: "))
 
-# check if biggest number
+# check what is the biggest number
 # print the biggest number
