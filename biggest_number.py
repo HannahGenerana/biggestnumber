@@ -26,7 +26,7 @@ def inputs():
     print ("Third number: ",third_number)
 
 
-# check and find the biggest number
+  # check and find the biggest number then print the biggest number
     if first_number >= second_number and first_number >= third_number:
          print (first_number,"is the largest among all inputs") 
     elif second_number >= first_number and second_number >= third_number:
@@ -34,8 +34,10 @@ def inputs():
     else:
          print (third_number, "is the largest among all inputs") 
 
-# print the biggest number
-    
+  # close the window after showing the biggest number
+    messagebox.showinfo(title="Random Number", message="Thank you for participating!")
+    command = root.destroy()
+
 # custom the window
 frame = customtkinter.CTkFrame(master=root)
 frame.pack(pady=15,padx=25,fill="both", expand=True)
