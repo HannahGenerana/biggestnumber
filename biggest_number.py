@@ -37,13 +37,13 @@ def inputs():
   # check and find the biggest number then print the biggest number
     if first_number >= second_number and first_number >= third_number:
         time.sleep(1.30)
-        print (first_number,Fore.MAGENTA + Style.BRIGHT, "is the largest among all inputs") 
+        print (first_number,Fore.MAGENTA + Style.BRIGHT, "is the largest number among all inputs") 
     elif second_number >= first_number and second_number >= third_number:
         time.sleep(1.30)
-        print (second_number, Fore.MAGENTA + Style.BRIGHT, "is the largest among all inputs")
+        print (second_number, Fore.MAGENTA + Style.BRIGHT, "is the largest number among all inputs")
     else:
         time.sleep(1.30)
-        print (third_number, Fore.MAGENTA + Style.BRIGHT, "is the largest among all inputs") 
+        print (third_number, Fore.MAGENTA + Style.BRIGHT, "is the largest number among all inputs") 
 
 
   # close the window after showing the biggest number
