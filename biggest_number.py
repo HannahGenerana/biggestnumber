@@ -16,23 +16,14 @@ root = customtkinter.CTk()
 root.geometry("300x300")
 
 
-# ask the user to input 3 numbers
-messagebox.showinfo(title="Random Number", message="Welcome! Kindly click 'OK' to proceed.")
+  # ask the user to input 3 numbers
+def inputs():
+    first_number = int(entry_first.get())
 
-first_num = int(input("Kindly input your first random number: "))
-second_num = int(input("Kindly input your second random number: "))
-third_num = int(input("Kindly input your third random number: "))
+    time.sleep(1.00)
+    print (Fore.LIGHTYELLOW_EX + Style.NORMAL,"First number: ",first_number)
 
 # check and find the biggest number
-if first_num > second_num and first_num > third_num:
-    print (first_num,"is the largest number")
-
-elif second_num > first_num and second_num > third_num:
-    print (second_num,"is the largest number")
-
-else:
-    third_num 
-    print (third_num,"is the largest number")
 
 # print the biggest number
     
@@ -53,7 +44,7 @@ entry_second.pack(pady=10,padx=10)
 entry_third = customtkinter.CTkEntry(master=frame, placeholder_text="Third Number")
 entry_third.pack(pady=10,padx=10)
 
-button = customtkinter.CTkButton(master=frame, text="Find the Largest between the inputs")
+button = customtkinter.CTkButton(master=frame, text="Find the Largest between the inputs", command=inputs,)
 button.pack(pady=20,padx=20)
 
 root.mainloop()
