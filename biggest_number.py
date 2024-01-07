@@ -13,8 +13,11 @@ customtkinter.set_appearance_mode("Light")
 customtkinter.set_default_color_theme("blue")
 
 root = customtkinter.CTk()
-root.geometry("400x400")
+root.geometry("350x450")
 
+# funtions
+def close():
+    command = root.destroy()
 
   # ask the user to input 3 numbers
 def inputs():
@@ -47,24 +50,27 @@ def inputs():
 
 # custom the window
 frame = customtkinter.CTkFrame(master=root)
-frame.pack(pady=30,padx=30,fill="both", expand=True)
+frame.pack(pady=25,padx=25,fill="both", expand=True)
 
 label_one= customtkinter.CTkLabel(master=frame, text="Welcome!")
 label_one.pack(pady=5,padx=5)
 
-label_two= customtkinter.CTkLabel(master=frame, text="Input 3 random numbers")
-label_two.pack(pady=15,padx=15)
+label_two= customtkinter.CTkLabel(master=frame, text="Kindly input 3 random numbers")
+label_two.pack(pady=5,padx=5)
 
 entry_first = customtkinter.CTkEntry(master=frame, placeholder_text="Enter a random number")
-entry_first.pack(pady=15,padx=20)
+entry_first.pack(pady=10,padx=10)
 
 entry_second = customtkinter.CTkEntry(master=frame, placeholder_text="Enter a random number")
-entry_second.pack(pady=15,padx=20)
+entry_second.pack(pady=10,padx=10)
 
 entry_third = customtkinter.CTkEntry(master=frame, placeholder_text="Enter a random number")
-entry_third.pack(pady=15,padx=15)
+entry_third.pack(pady=10,padx=10)
 
-button = customtkinter.CTkButton(master=frame, text="Find the largest input number", command=inputs,)
-button.pack(pady=25,padx=25)
+button_continue = customtkinter.CTkButton(master=frame, text="Find the largest input number", command=inputs,)
+button_continue.pack(pady=20,padx=20)
+
+button_close= customtkinter.CTkButton(master=frame, text="Find the largest input number", command=close,)
+button_close.pack(pady=20,padx=20)
 
 root.mainloop()
