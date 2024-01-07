@@ -21,9 +21,9 @@ def inputs():
     first_number = int(entry_first.get())
     second_number = int(entry_second.get())
     third_number = int(entry_third.get())
-    print (Fore.LIGHTYELLOW_EX + Style.NORMAL,"First number: ",first_number)
-    print (Fore.LIGHTBLUE_EX + Style.NORMAL,"Second number: ",second_number)
-    print (Fore.LIGHTGREEN_EX + Style.NORMAL,"Third number: ",third_number)
+    print ("First number: ",first_number)
+    print ("Second number: ",second_number)
+    print ("Third number: ",third_number)
 
 
 # check and find the biggest number
